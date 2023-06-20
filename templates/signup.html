@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<!-- Add Bootstrap stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Dream Escape</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a target="templates/services.html" href="services">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+	<div class="container">
+		<h1 class="mt-5">Sign Up</h1>
+		<form action="{{ url_for('submit_form') }}" method="POST" class="mt-4">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" class="form-control" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" class="form-control" required>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" class="form-control" required>
+			</div>
+
+			<div class="form-group">
+				<label for="confirm-password">Confirm Password:</label>
+				<input type="password" id="confirm-password" name="confirm-password" class="form-control" required>
+			</div>
+
+			<div class="form-group">
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" class="form-control" required>
+			</div>
+
+			<div class="form-group">
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender" class="form-control" required>
+					<option value="">--Please select--</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Sign Up</button>
+		</form>
+	</div>
+
+	<!-- Add Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+			integrity="sha384-Q5SS5P/Kf5rkVh+CFdkQ2EzJVbGvlmAg1V7hCDl/EwgmVpWro/TJF/zTxGVojKGZ"
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

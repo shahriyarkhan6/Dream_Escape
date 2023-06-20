@@ -1,0 +1,241 @@
+{% extends "country_layout.html" %}
+
+{% block body %}
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Dream Escape</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a target="templates/services.html" href="services">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services">Services</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="video-container">
+      <video autoplay loop muted src="../static/colombia_pics/colombia.mp4" class="background-video"></video>
+      <h1 class="video-title">Welcome to Colombia</h1>
+    </div>
+
+  </header>
+
+  <br> <br>
+
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+
+      <div class="main">
+      <h2>People say Colombia is a {{ score }}/10</h2>
+        <hr>
+
+        <h2>Bienvenido</h2>
+        <p>Find the greatest attraction only found in Colombia</p>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <img src="../static/colombia_pics/colombia.jpg" alt="Mountains" style="width:100%"><br><Br>
+              <h3> Cartagena</h3>
+              <p> This idyllic beach is located on the Caribbean coast, just a short boat ride from Cartagena. With its crystal-clear water and powdery white sand, it's a popular spot for swimming, sunbathing, and snorkeling.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="../static/colombia_pics/colombia2.jpg" alt="Lights" style="width:100%"><br><Br>
+              <h3> Andean Mountain's</h3>
+              <p>One of the most well-known features of Colombia's natural landscape is its Andean mountain range, which runs down the western side of the country. The Andes are home to a number of unique ecosystems, including cloud forests, paramos, and high-altitude lakes, and are also home to many indigenous communities.
+
+</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="../static/colombia_pics/colombia3.jpg" alt="Nature" style="width:100%"><br><Br>
+              <h3>Magdelena</h3>
+              <p>This is Colombia's most important river and serves as a major transportation artery, running from the Andes mountains to the Caribbean Sea. It's also a popular destination for river cruises and fishing trips, and is home to several important cultural sites, including the colonial city of Mompox.
+
+.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="../static/colombia_pics/colombia4.jpg" alt="Mountains" style="width:100%"> <br><Br>
+              <h3> People</h3>
+              <p>One of the defining characteristics of Colombian people is their warmth and friendliness. Colombians are known for being welcoming to visitors and for valuing family, community, and social connections. This is reflected in the country's vibrant culture, which includes colorful festivals, music, and dance.</p>
+            </div>
+          </div>
+          <!-- END GRID -->
+        </div>
+
+        <div class="content">
+          <img src="../static/colombia_pics/colombia6.jpg" alt="Bear" style="width:100%">
+          <br>
+          <br>
+        
+          <h2>Amazon River</h2>
+          <br>
+          <p>  Although only a small portion of the Amazon River basin is located in Colombia, it is still an important part of the country's natural heritage. The river is surrounded by some of the world's most biodiverse rainforest, and is home to countless species of plants and animals, many of which are found nowhere else on Earth.</p>
+          
+        </div>
+
+        <!-- END MAIN -->
+      </div>
+
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>Colombia Natural Waterfalls</h2>
+      <h5>Only in Columbia</h5>
+      <div class="img1">
+        <img src="../static/colombia_pics/colombia7.jpg" alt="Your image description" style="width: 600px; height: auto;">
+      </div>
+
+      <br>
+      <p>Waterfalls are part of the water cycle and play a crucial role in maintaining the ecological balance of the region. They provide a source of freshwater for nearby ecosystems and help to regulate the water supply for plants and animals. In addition, waterfalls often have unique microclimates that support a variety of plant and animal life.
+      </p>
+      <br>
+      <h2>Cauca River </h2>
+  
+      <div class="img1">
+        <img src="../static/colombia_pics/colombia9.jpg" alt="Your image description" style="width: 600px; height: auto;">
+      </div>
+      <br>
+      <p>The Cauca River is the second-longest river in Colombia, stretching for over 1,300 km from the Andes to the Magdalena River. It is an important source of hydroelectric power and irrigation water, and is also used for transportation and fishing.
+
+
+      </p>
+      <br>
+      <h2> Orinoco River  </h2>
+      <div class="img1">
+        <img src="../static/colombia_pics/colombian8.jpg" alt="Your image description" style="width: 600px; height: auto;">
+      </div>
+      <br>
+      <p>
+        The Orinoco River forms part of the border between Colombia and Venezuela, and is an important source of freshwater and biodiversity. The river basin is home to a number of indigenous communities and is also an important area for agriculture and mining.
+
+
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <div class="main">
+
+
+    <hr>
+
+    <h2>Pictures Sent to Us</h2>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('food')"> Food</button>
+      <button class="btn" onclick="filterSelection('history')"> People</button>
+    </div>
+
+
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="rows">
+      <div class="columns nature">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia14.jpg" alt="Mountains" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="columns nature">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia15.jpg" alt="Lights" style="width:100%">
+ 
+        </div>
+      </div>
+      <div class="columns nature">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia16.jpg" alt="Nature" style="width:100%">
+  
+        </div>
+      </div>
+
+      <div class="columns food">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia13.jpg" alt="Food" style="width:100%">
+  
+        </div>
+      </div>
+      <div class="columns food">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia13.jpg" alt="Food" style="width:100%">
+    
+        </div>
+      </div>
+      <div class="columns food">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia12.jpg" alt="Food" style="width:100%">
+     
+        </div>
+      </div>
+
+      <div class="columns history">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia17.jpg" alt="History" style="width:100%">
+      
+        </div>
+      </div>
+      <div class="columns history">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia18.jpg" alt="History" style="width:100%">
+
+        </div>
+      </div>
+      <div class="columns history">
+        <div class="contents">
+          <img src="../static/colombia_pics/colombia19.jpg" alt="History" style="width:100%">
+  
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+
+    <br><br><br>
+
+<form class="form" action="/colombia_review" method ="post">
+  
+  <h2>Leave a review!</h2>
+  <label for="name">Name:</label><br>
+  <input type="text" name="name" id="name" required /><br>
+  <label for="score">Score:</label><br>
+  <input type="number" name="score" id="score" min="1" max="10" required /><br><br>
+  <textarea type="text" name="review" id="review" cols="100" placeholder="Enter your review here!"></textarea><br>
+  <input class="button" type="submit" value="Submit" />
+  
+</form>
+
+      <!--How to display reviews-->
+  <br><h1>Reviews</h1>
+
+      {% for result in results %}
+          <br>
+          <strong>Name:</strong> {{ result[0] }}<br>
+          <strong>Score:</strong> {{ result[1] }}<br>
+          <strong>Review:</strong> {{ result[2] }}<br>
+          <br><hr>
+
+      {% endfor %}
+
+{% endblock %}
