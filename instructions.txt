@@ -1,0 +1,15 @@
+---Shahriyar Khan --- 1008221595
+---Andy Wang --- 1007755948
+---Hamza Khalid --- 1007244938 
+
+Our website is essentially a travel agency website where users can browse through numerous destinations and check previous user reviews and check destination rankings that are based off of price and score given.
+
+A list of some features we addded/can be noted includes:
+- Reviews stored in a POST SQL table linked to flask
+- Each SQL review table has integrity checks
+- The reviews are displayed in a clean format on the page once it is added.
+- A currency converter is added, changing/showing coversion of different countries conversion 
+- Country rankings show Various packages available in a month, with the ability to be sorted through various factors along with a responsive search bar for results
+- Login page created, which gives the ability for the user to create an account and is stored in an SQL table
+- All of the reviews in each country and the account tables are printed in the Console for reference
+- Implementation of JavaScript through currency page, country rankings page, in the home page and in each country page
